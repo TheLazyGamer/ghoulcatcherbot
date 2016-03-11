@@ -2,18 +2,29 @@ import java.awt.Color;
 import java.awt.Point;
 
 public class Config {
+	public static double RANDOM_MOVE = 0.33;
 	public static final int DELAY_KEY_RELEASE = 10;
 	public static final int DELAY_BETWEEN_ACTION = 100;
 	public static final int DELAY_LOADING = 2000;
 	public static final int DELAY_INACTIVE = 10000;
 	public static final int BOARD_HEIGHT = 6;
 	public static final int BOARD_WIDTH = 6;
+	
+	// 1920 x 1080 with 125% scale
+	public static final int GRID_SIZE = 79;
+	public static final Point COORD_FIRST_GRID = new Point(528, 349);
+	public static final Point COORD_BUTTON_RESTART = new Point(777, 910);
+	public static final Point COORD_BUTTON_NEWGAME = new Point(777, 740);
+	public static final Point COORD_COMPLETED = new Point(675, 300);
+	
+	/*
+	// 1366 x 768
 	public static final int GRID_SIZE = 55;
 	public static final Point COORD_FIRST_GRID = new Point(363, 256);
 	public static final Point COORD_BUTTON_RESTART = new Point(535, 645);
 	public static final Point COORD_BUTTON_NEWGAME = new Point(535, 535);
 	public static final Point COORD_COMPLETED = new Point(462, 224);
-	public static double RANDOM_MOVE = 0.33;
+	*/
 }
 
 enum MyColor {
